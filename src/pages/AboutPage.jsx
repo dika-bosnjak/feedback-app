@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 import Card from "../components/shared/Card"
 
+//AboutPage component consists of one card and some info
+//This component uses Link from react-router-dom to redirect user without loading page again
 function AboutPage() {
   return (
     <Card reverse={true}>

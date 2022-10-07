@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 
+//Header component (has defaultProps value and propTypes defined)
 function Header({text}) {
   return (
     <header>

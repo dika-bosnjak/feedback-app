@@ -195,16 +195,12 @@ input:focus {
   color: rgb(47, 49, 49);
 }
 
-/* FIX: Remove position: absolute to keep about icon at the bottom of the
- * document */
 .about-link {
   position: absolute;
   bottom:  20px;
   right: 20px;
 }
 
-/* FIX: Remove position: absolute to keep about icon at the bottom of the
- * document */
 .about-link a {
   color: #fff;
   cursor: pointer;

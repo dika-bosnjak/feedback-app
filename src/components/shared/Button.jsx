@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
 
+//Button component offers displaying of custom defined button with params: 
+//children as a text, version as for ex. primary, secondary... type as for ex. submit and isDisabled bool value
 function Button({children, version, type, isDisabled}) {
   return (
     <button type={type} disabled={isDisabled} className={`btn btn-${version}`}>

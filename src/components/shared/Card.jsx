@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 
+//Card component wraps the children in a div with the exact class
 function Card({children, reverse}) {
   return (
     <div className={`card ${reverse && 'reverse'}`}>{children}</div>
@@ -11,7 +12,7 @@ Card.defaultProps = {
 }
 
 Card.propTypes = {
-  children: PropTypes.object
+  children: PropTypes.array
 }
 
 export default Card

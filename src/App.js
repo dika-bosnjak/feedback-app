@@ -10,6 +10,11 @@ import AboutIconLink from "./components/AboutIconLink";
 
 import { FeedbackProvider } from "./context/FeedbackContext";
 
+//The whole app is wrapped in FeedbackProvider so the data from feedback context can be used in the app
+//React router is used, all routes must be wrapped in Routes tag
+//Main route consists of three components
+//About route consists of only one component
+
 function App() {
   return (
     <FeedbackProvider>

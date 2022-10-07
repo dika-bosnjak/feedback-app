@@ -2,10 +2,10 @@ import {FaTimes, FaEdit} from 'react-icons/fa'
 import { useContext } from 'react'
 
 import FeedbackContext from '../context/FeedbackContext'
-
 import Card from "./shared/Card"
 import PropTypes from 'prop-types'
 
+//FeedbackItem displays feedback rating and text message and this component offers edit and delete functionalities
 function FeedbackItem({item}) {
   const {deleteFeedback, editFeedback} = useContext(FeedbackContext)
   return (

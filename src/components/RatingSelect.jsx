@@ -1,19 +1,9 @@
-import {useState, useContext, useEffect} from 'react'
-import FeedbackContext from '../context/FeedbackContext'
 
-function RatingSelect({select}) {
-    const [selected, setSelected] = useState(10)
-
-    const { feedbackEdit } = useContext(FeedbackContext)
-
-    useEffect(() => {
-      setSelected(feedbackEdit.item.rating)
-    }, [feedbackEdit])
-
-    const handleChange = (e) => {
-        setSelected(+e.currentTarget.value)
-        select(+e.currentTarget.value)
-    }
+//RatingSelect component provides checkboxes for giving rating functionality - displays ratings 1 - 10 and handle changes
+function RatingSelect({select, selected}) {
+  const handleChange = (e) => {
+      select(+e.currentTarget.value)
+  }
   return (
     <ul className='rating'>
     {Array.from({ length: 10 }, (_, i) => (
