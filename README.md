@@ -17,4 +17,4 @@ Context API - allows sharing states across the entire app(or part of it) lightly
 HTTP Requests - HTTP requests are handled using asyncAwait fetch
 
 
-Try this application (without using local server) on link: https://voluble-beignet-464051.netlify.app/
+Try this application (without using local server) on link: https://db-feedback-app.netlify.app/
